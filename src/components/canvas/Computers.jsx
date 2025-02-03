@@ -59,6 +59,10 @@ function ComputerCanvas() {
     };
   }, []);
 
+  if (isMobile) {
+    return null;
+  }
+
   return (
     <Canvas
       frameloop="demand"
