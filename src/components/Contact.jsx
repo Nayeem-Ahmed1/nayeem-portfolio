@@ -7,6 +7,7 @@ import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { useScreenSize } from "../utils/ScreenSizeContext";
 
 function Contact() {
   const formRef = useRef();
@@ -16,6 +17,8 @@ function Contact() {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+
+  const isMobile = useScreenSize();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -123,12 +126,14 @@ function Contact() {
         </form>
       </motion.div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
+      {!isMobile && (
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <EarthCanvas />
+        </motion.div>
+      )}
     </div>
   );
 }
