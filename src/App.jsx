@@ -12,8 +12,11 @@ import {
 } from "./components";
 
 import toast, { Toaster } from "react-hot-toast";
+import { useScreenSize } from "./utils/ScreenSizeContext";
 
 function App() {
+  const isMobile = useScreenSize();
+
   return (
     <>
       <BrowserRouter>
@@ -25,12 +28,12 @@ function App() {
           </div>
           <About />
           <Experience />
-          <Tech />
+          {!isMobile && <Tech />}
           <Works />
           <Feedbacks />
           <div className="relative z-0">
             <Contact />
-            <StarsCanvas />
+            {!isMobile && <StarsCanvas />}
           </div>
         </div>
       </BrowserRouter>
