@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 import { useScreenSize } from "../utils/ScreenSizeContext";
-import { techGuy } from "../assets";
+import { techGuy, nayeemPic } from "../assets";
 
 function Hero() {
   const isMobile = useScreenSize();
@@ -34,11 +34,11 @@ function Hero() {
       </div>
 
       {isMobile && (
-        <div className="bg-slate-100 h-52 w-52 absolute flex justify-center items-center left-[4.75rem] top-2/4 rounded-full">
+        <div className="bg-slate-100 h-52 w-52 absolute flex justify-center items-center left-[4.75rem] top-2/4 rounded-full border-indigo-400 border-4">
           <img
-            src={techGuy}
+            src={nayeemPic}
             alt="MD-Nayeem-Ahmed-portfolio"
-            className="rounded-full w-48 hover:scale-90"
+            className="rounded-full w-52 hover:scale-110"
           />
         </div>
       )}
