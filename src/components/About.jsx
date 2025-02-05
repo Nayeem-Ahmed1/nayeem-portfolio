@@ -35,13 +35,22 @@ function About() {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[32px]"
       >
-        I'm a Software Developer with experience in JavaScript, and expertise in
-        frameworks like React,Node.js and Next.js.I'm a quick learner and
-        collaborate closely with clients to create efficient,scalable, and
-        user-friendly solutionos that solve real-world problems.Let's work
-        together to bring ideas to life.
+        <strong>
+          Hi, I'm Md. Nayeem Ahmed, a Software Developer specializing in
+          JavaScript, React, Node.js, and Next.js.
+        </strong>
+        I build <strong>scalable, high-performance web applications,</strong>
+        that enhance user experience and drive business growth.
+        <br /> As a <strong>quick learner and problem-solver,</strong> I
+        collaborate closely with clients to{" "}
+        <strong>develop efficient, secure, and user-friendly solutions </strong>
+        for real-world challenges. My focus is on writing{" "}
+        <strong>clean, maintainable code</strong> while optimizing performance.
+        <br />
+        <br />
+        <strong>💡 Let's work together to turn your ideas into reality!</strong>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -27,25 +27,25 @@ function Hero() {
             Hi, I'm <span className="text-[#915eff]">Nayeem</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Web Application <br className="sm:block hidden" />
+            I develop Web Applications <br className="sm:block hidden" />
             and User Interfaces
           </p>
         </div>
       </div>
 
       {isMobile && (
-        <div className="bg-slate-100 h-48 w-48 absolute flex justify-center items-center left-[5.2rem] top-2/4 rounded-full">
+        <div className="bg-slate-100 h-52 w-52 absolute flex justify-center items-center left-[4.75rem] top-2/4 rounded-full">
           <img
             src={techGuy}
             alt="MD-Nayeem-Ahmed-portfolio"
-            className="rounded-full w-44"
+            className="rounded-full w-48 hover:scale-90"
           />
         </div>
       )}
 
       {!isMobile && <ComputersCanvas />}
 
-      <div className="absolute xs:bottom-10 sm:bottom-32 bottom-10 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 sm:bottom-32 bottom-12 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
