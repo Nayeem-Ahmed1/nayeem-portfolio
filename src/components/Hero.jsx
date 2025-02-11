@@ -32,6 +32,7 @@ function Hero() {
           </p>
         </div>
       </div>
+      {/* this comment is for redeploy purpose only  */}
 
       {isMobile && (
         <div className="bg-slate-100 h-52 w-52 absolute flex justify-center items-center left-[4.75rem] top-2/4 rounded-full border-indigo-400 border-4">
